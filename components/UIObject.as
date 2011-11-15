@@ -1,8 +1,16 @@
 class components.UIObject extends Object {
+	var initializeDraw:Boolean;
 	function UIObject() {
 		init();
 	}
 	function init() {
-		return;
+		initializeDraw = true;
+		draw();
+	}
+	function draw()
+	{
+		if (initializeDraw) {
+			initializeDraw = false;
+		}
 	}
 }
