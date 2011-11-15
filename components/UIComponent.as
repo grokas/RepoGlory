@@ -4,5 +4,8 @@ class components.UIComponent extends components.UIObject {
 	}
 	function draw() {
     super.draw();
+    drawExtras();
+	}
+	function drawExtras() {
 	}
 }
